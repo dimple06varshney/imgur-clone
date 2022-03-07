@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" href="https://s.imgur.com/images/favicon-32x32.png" sizes="32x32">
+    <title>Imgur: The magic of the Internet</title>
+</head>
+<body>
+    <!-- #### Navbar ##### -->
+    <div class="navBar">
+        <div class="NavbarContainer-left">
+            <img class="main_Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imgur_Logo_Light.svg/1280px-Imgur_Logo_Light.svg.png" />
+            <button class="newPost"><img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg" />New post</button>
+        </div>
+        <div class="NavbarContainer-center">
+            <div class="Searchbar">
+                    <input placeholder="Images, #tags, @users oh my!" type="text" class="Searchbar-textInput" id="searchInp" style="height: 36px;">
+                    <button class="Searchbar-submitInput" id="searchBtn">
+                    <img class="search" src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg">
+                    </button>
+            </div>
+        </div>
+        <div class="NavbarContainer-right">
+            <button class="newPost2">Go Ad-Free</button>
+            <button class="newPost3">Sign in</button>
+            <button class="newPost">Signup</button>
+        </div>
+    </div>
+     <!--#### EXPLORE TAGS ####  -->
+     <div class="main_Box">
+        <div class="Message">You, as an Imgurian, are a beautiful creature and deserve happiness.</div>
+        <div id="tagsBox">
+            <div class="tagBoxs">
+                <img src="https://ethereumworldnews.com/wp-content/uploads/2018/04/tothemoon.jpg" />
+                <h4  class="title" >Spaces</h4>
+                <p class="titleTag">2854 posts</p>
+            </div>
+            <div class="tagBoxs3">
+                <img src="http://cryptoconsulting.info/wp-content/uploads/2018/09/Ripple_XRP_Cryptmagic-1.jpg.d51a53c8805797adf06f48e35fd341cc-1.jpg" />
+                <h4 class="title">Imgur13</h4>
+                <p class="titleTag">2897 posts</p>
+            </div>
+            <div class="tagBoxs2">
+                <img src="https://images.pexels.com/photos/4301252/pexels-photo-4301252.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                <h4 class="title">Vintage</h4>
+                <p class="titleTag">8897 posts</p>
+            </div>
+            <div class="tagBoxs2">
+                <img src="https://images.nintendolife.com/ba755ea1654cd/545x385.jpg" />
+                <h4 class="title">Pokemon</h4>
+                <p class="titleTag">897 posts</p>
+            </div>
+            <div class="tagBoxs3">
+                <img src="https://cdn.the-scientist.com/assets/articleNo/69216/aImg/43641/science-article-m.png" />
+                <h4 class="title">Staff Picks</h4>
+                <p class="titleTag">28,897 posts</p>
+            </div>
+            <div class="tagBoxs2">
+                <img src="https://static.scientificamerican.com/blogs/cache/file/CF9EE362-4303-4D36-9692CB26DD2EA3E5_source.jpg?w=590&h=800&D5177721-5EAD-4684-A97212FC79670DCB" />
+                <h4 class="title">Science</h4>
+                <p class="titleTag">9897 posts</p>
+            </div>
+            <div class="tagBoxs">
+                <img src="https://www.financialexpress.com/wp-content/uploads/2021/12/Gaming-2.png" />
+                <h4 class="title">Gaming</h4>
+                <p class="titleTag">687 posts</p>
+            </div>
+            <div class="tagBoxs2">
+                <img src="https://filmdaily.co/wp-content/uploads/2020/07/dirty-lede-1300x731.jpg" />
+                <h4 class="title">Mems</h4>
+                <p class="titleTag">5,897 posts</p>
+            </div>
+        </div>
+        <div class="filtersCont">
+            <div class="filter-left-cont">
+                <div class="Dropdown-title" id="filter-left-dropDown"><span>Most Viral</span><img src="./drop-down-arrow.png" style="width: 20px; height: auto; vertical-align: middle; margin-left: 5px;" alt="^"></div>
+                <div class="Dropdown-menu Dropdown-menu--bottom" id="drop-list">
+                    <svg width="24" height="8" viewBox="0 0 24 8" class="Dropdown-triangle" fill="none" xmlns="http://www.w3.org/2000/svg"><title>icon</title><path fill="#53565d" d="M10.3359 1.1094C11.3436 0.437601 12.6564 0.437601 13.6641 1.1094L24 8L3.05823e-09 8L10.3359 1.1094Z"></path></svg>
+                    <div class="Dropdown-list"><div class="Dropdown-option isActive">Most Viral</div><div class="Dropdown-option">User Submitted</div><div class="Dropdown-option">Highest Scoring</div></div></div>
+            </div>
+            <div class="filter-right-cont">
+                <div class="Dropdown-title" id="filter-right-dropDown"><span>Newest</span><img src="./drop-down-arrow.png" style="width: 20px; height: auto; vertical-align: middle; margin-left: 5px;" alt="^"></div>
+                <div class="Dropdown-menu Dropdown-menu--bottom" id="drop-list-right">
+                    <svg width="24" height="8" viewBox="0 0 24 8" class="Dropdown-triangle" id="right-filter-svg" fill="none" xmlns="http://www.w3.org/2000/svg"><title>icon</title><path fill="#53565d" d="M10.3359 1.1094C11.3436 0.437601 12.6564 0.437601 13.6641 1.1094L24 8L3.05823e-09 8L10.3359 1.1094Z"></path></svg>
+                    <div class="Dropdown-list" id="right-filter-list">
+                        <div class="Dropdown-option ">Popular</div>
+                        <div class="Dropdown-option isActive">Newest</div>
+                        <div class="Dropdown-option">Best</div>
+                        <div class="Dropdown-option">Random</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- #### container #### -->
+   <div id="cont"></div>
+
+   <!-- #### Pagination #### -->
+   <div id="pagination">
+       <button id="prev">Prev</button>
+       <button id="next">Next</button>
+   </div>
+</body>
+</html>
+
+<script src="./main.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- #### Imgur -->
+<!-- <img src="https://i.imgur.com/glTBd.jpg" alt="gif"/> -->
